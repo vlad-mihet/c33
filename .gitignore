@@ -1,29 +1,23 @@
 # Dependencies
 node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+/.pnp
+.pnp.js
 
 # Build outputs
 dist/
 build/
-*.js.map
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
 
 # Environment variables
 .env
 .env.local
-.env.*.local
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Logs
 logs/
@@ -32,11 +26,29 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+pnpm-debug.log*
 
-# Testing
-coverage/
-.nyc_output/
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
 
 # Temporary files
+tmp/
+temp/
 *.tmp
-.cache/
+
+# MongoDB
+data/db/
+
+# Uploads
+uploads/
