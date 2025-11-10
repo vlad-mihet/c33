@@ -14,7 +14,7 @@ NestJS backend for Capital 33. Manages customers, processes background jobs, and
 ## Prerequisites
 
 - Node.js 20 LTS
-- MongoDB 6+ (local or Atlas)
+- MongoDB 8+ (local or Atlas)
 
 ## Quick Start
 
